@@ -1,6 +1,15 @@
 body{
     width: 1000px;
     text-align: center;
-    
+    background-color: rgba(173, 41, 32, 0.966);
     margin: 0 auto;
 }
+  .slider1,.slider2 {
+    width: 700px;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
