@@ -1,8 +1,8 @@
-let slider1 = document.getElementById("myRange1");
+let slider1 = document.getElementById("myRange1");       // capturing the values of the sliders 
 let output1 = document.getElementById("demo1");
 output1.innerHTML = slider1.value;
 
-slider1.oninput = function() {
+slider1.oninput = function() {                            // adding eventlistener oninput for the type=range;
   output1.innerHTML = this.value;
   updateBMI();
   statu();
@@ -18,7 +18,7 @@ slider2.oninput = function() {
   statu();
 }
 
-let emoji=document.getElementById("demo4");
+let emoji=document.getElementById("demo4"); /// function to calculate the bmi and setting it to only 2 decimals after.
 let target=document.getElementById("demo3");
 function updateBMI() {
     let weight = parseFloat(output1.innerHTML);
@@ -27,7 +27,7 @@ function updateBMI() {
     target.innerHTML = bmi.toFixed(2);
   }
 
-function statu(){
+function statu(){              //function withif else statement for display of emoji and bmi status
     if (target.innerHTML<18.5){
         emoji.innerHTML="Underweight 🤢";
     }else if(18.5<=target.innerHTML && target.innerHTML<=24.9){

@@ -2,10 +2,10 @@ body{
     width: 1000px;
     text-align: center;
     background-color: rgba(173, 41, 32, 0.966);
-    margin: 0 auto;
+    margin: auto auto;
 }
   .slider1,.slider2 {
-    width: 700px;
+    width: 360px;
     height: 25px;
     background: #d3d3d3;
     outline: none;
